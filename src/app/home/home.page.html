@@ -1,0 +1,80 @@
+<head>
+  <!-- Add Google Font for Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Metric Converter</ion-title>
+      <ion-label>By: Hebron Prasetya</ion-label>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+
+    <ion-item>
+      <ion-input
+        label="Input Nilai"
+        type="number"
+        labelPlacement="floating"
+        (ionChange)="calculateConversion($event)"
+      ></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-select 
+        label="Pilih Metrik" 
+        label-placement="floating" 
+        interface="alert"
+        (ionChange)="handleMetricChange($event)"
+      >
+        <ion-select-option *ngFor="let metric of metricTypes" [value]="metric">
+          {{ metric.name }}
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <p>Dari:</p>
+    <ion-item>
+      <ion-select
+        label="--Pilih Satuan"
+        label-placement="floating"
+        [disabled]="isMetricDisabled"
+        interface="alert"
+        (ionChange)="setUnitIndex1($event)"
+      >
+        <ion-select-option 
+          *ngFor="let unit of (selectedMetricType == 'Panjang' ? lengthUnits : selectedMetricType == 'Massa' ? massUnits : selectedMetricType == 'Waktu' ? timeUnits : selectedMetricType == 'Arus listrik' ? currentUnits : temperatureUnits)"
+          [value]="unit"
+        >
+          {{ unit.name }}
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <p>Ke:</p>
+    <ion-item>
+      <ion-select
+        label="--Pilih Satuan"
+        label-placement="floating"
+        [disabled]="isMetricDisabled"
+        interface="alert"
+        (ionChange)="setUnitIndex2($event)"
+      >
+        <ion-select-option 
+          *ngFor="let unit of (selectedMetricType == 'Panjang' ? lengthUnits : selectedMetricType == 'Massa' ? massUnits : selectedMetricType == 'Waktu' ? timeUnits : selectedMetricType == 'Arus listrik' ? currentUnits : temperatureUnits)"
+          [value]="unit"
+        >
+          {{ unit.name }}
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    
+
+    <ion-item>
+      <ion-input label="Hasil" [readonly]="true" value="{{ conversionResult }}"></ion-input>
+   

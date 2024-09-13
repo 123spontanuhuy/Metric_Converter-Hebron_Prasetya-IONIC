@@ -1,0 +1,8 @@
+{
+  "name": "Metric_Converter",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
