@@ -5,8 +5,8 @@
 }
 
 ion-content {
-  --background: black; /* This uses Ionic's CSS variable for background */
-  color: white;        /* Ensures text is white */
+  --background: black;
+  color: white;        
 }
 
 ion-card {
@@ -17,15 +17,15 @@ ion-card {
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 20px;
-  color: white;   /* Change text color to white inside the card */
+  color: white;   
   font-size: 1.2rem;
 }
 
 ion-item {
-  --background: transparent !important; /* Force ion-item background to be transparent */
+  --background: transparent !important; 
   color: white;        
-  margin-bottom: 60px;        /* Set text color to black */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Optional: Add a subtle border for visibility */
+  margin-bottom: 60px;       
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
 }
 
 ion-title{
@@ -43,9 +43,9 @@ ion-select{
 
 
 ion-select, ion-input {
-  --background: transparent !important; /* Ensure select and input have a transparent background */
-  --color: white; /* Set text color to black */
-  --placeholder-color: rgba(0, 0, 0, 0.5); /* Placeholder text color */
+  --background: transparent !important; 
+  --color: white; 
+  --placeholder-color: rgba(0, 0, 0, 0.5); 
 }
 
 
@@ -53,11 +53,11 @@ ion-select, ion-input {
 
 
 ion-header {
-  border: 0.1px solid white;  /* Thin white line (border) around the toolbar */
+  border: 0.1px solid white;  
  
   text-align: center;
-  background-color: black; /* Make the ion-header background transparent */
-  color: black;                  /* Set header text color to black */
+  background-color: black; 
+  color: black;                  
 }
 
 
@@ -65,7 +65,7 @@ ion-header {
 
 
 p {
-  color: white;  /* Ensure all <p> text is white for visibility */
+  color: white;  
   margin-left: 15px;
   font-weight: 600;
 }
@@ -83,25 +83,23 @@ p {
 #container strong {
   font-size: 20px;
   line-height: 26px;
-  color: white; /* Change strong text to white */
+  color: white; 
 }
 
 #container p {
   font-size: 16px;
   line-height: 22px;
-  color: #8c8c8c; /* Slightly dim the paragraph text */
+  color: #8c8c8c; 
   margin: 0;
 }
 
 
 ion-toolbar {
-  --background: black;      /* This ensures the toolbar background is black */
+  --background: black;     
   color: white; 
-        /* Optional: to round the corners slightly */
-      
 }
 
 #container a {
   text-decoration: none;
-  color: white;  /* Ensure links are white as well */
+  color: white; 
 }
