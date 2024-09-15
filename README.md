@@ -5,4 +5,4 @@
 <p align="center">Ini merupakan Aplikasi Sederhana Metric Converter yang dapat digunakan untuk mengkonversi besaran satuan pokok SI (panjang, massa, waktu, arus listrik, dan suhu)</p>
 
 ### Download
-Link Google Drive: https://drive.google.com/file/d/1Z05MzxMdskZIJhHcD0yrvFE-F5wrT8ze/view?usp=sharing
+Link Google Drive: https://drive.google.com/file/d/1s-7CtP7ldPv5aC51281xCZGYEGX1XBLw/view?usp=drive_link
